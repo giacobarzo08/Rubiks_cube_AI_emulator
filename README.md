@@ -46,6 +46,18 @@ winget install git
 REM riavviare il computer
 ```
 
+## Utilizzo del programma
+E' possibile accedere a tutte le risorse lanciando il file `main.py`. Il dispaly mostrerà tutte le possibilità.
+
+```cmd
+python main.py
+```
+
+E' consigliato eseguire prima il file `ai_lerner.py` per addestrare il modello di intelligenza artificiale, almeno finché il livello ri ramdonnes non scende al di sotto del 5%.
+```cmd
+python ai_lerner.py
+```
+
 ## Ancora in elaborazione
 Stiamo ancora migliorando questo progetto. Se notate bug, per favore fatecelo sapere.
 
