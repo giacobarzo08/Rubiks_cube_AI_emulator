@@ -1,4 +1,4 @@
-#nump Emulatore di un cubo di Rubik
+# Emulatore di un cubo di Rubik
 
 Questo programma ha lo scopo di consentire all'utente di utilizzare un cubo di Rubik digitale: su un display vengono visualizzate tutte le facce del cubo ed è possibile ruotare il cubo nei modi standard, che sono spiegati poco sotto, come si farebbe con un cubo reale.
 E' anche possibile, grazie alle funzioni della libreria `pyvista`, avere una vista cartesiana in 3D del cubo (è possibile anche, con una leggera modifica al codice - bisogna inserire il parametro `True` alla chimata della funzione `plt.plot_cube()` alla riga 182 del file `app.py` - passare ad una vista isometrica).
