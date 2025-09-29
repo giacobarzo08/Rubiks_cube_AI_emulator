@@ -187,8 +187,9 @@ class Display:
                         copied_cube = deepcopy(self.virtual_cube._blocks)
                         with open('cube.py', 'w') as f:
                             f.write(f'my_rubiks_cube_state = {copied_cube}')
-                        subprocess.Popen('python ai_learner.py --load_model --inference --load_cube=cube.py', shell=True)
-                        AI_is_running(self.virtual_surface)
+                        # subprocess.Popen('python ai_learner.py --load_model --inference --load_cube=cube.py', shell=True)
+                        # AI_is_running(self.virtual_surface)
+                        print("File cube.py creato. Caricarlo su Colab per risolvere il cubo con l'AI.")
 
             self.screen.fill((255, 255, 255))
             self.scaled_surface = pg.transform.scale(self.virtual_surface, self.scaled_size)
@@ -201,4 +202,5 @@ class Display:
 if __name__ == "__main__":
     display = Display()
     display.inizialize()
+
     display.run()
